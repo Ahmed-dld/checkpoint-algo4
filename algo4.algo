@@ -1,0 +1,47 @@
+ALGORITHM checkpoint_algo4
+PROCEDURE application_Tri_insertion
+
+VAR
+    T : tab
+    n: INTEGER
+
+    
+    BEGIN
+        FOR i FROM 2 TO n   DO
+            a:= T[i]
+            j:= i 
+            IF (j > 1) and (T[j-1] > 1) THEN
+            T[j]:= T[j-1]
+            j:= j - 1;
+                
+            END_IF
+            T[j]:= a
+        END_FOR
+END Tri_insertion
+    END
+
+
+
+
+    ALGORITHM tri_insertion_arr
+    PROCEDURE tri_insertion (tabint, 6)
+    VAR
+        i : INTEGER
+        j : INTEGER
+        aux : INTEGER
+        tabint : array of INTEGER
+    BEGIN
+     FOR i FROM 0 TO 5   DO
+            aux:= tabint[i]
+            j:= i 
+            IF (j > 0) and (tabint[j-1] > aux) THEN
+            tabint[j]:= tabint[j-1]
+            j:= j - 1;
+                
+            END_IF
+            tabint[j]:= aux
+        END_FOR
+END Tri_insertion   
+    END
+
+    
